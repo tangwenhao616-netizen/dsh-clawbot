@@ -345,7 +345,7 @@ function render(s) {
       // 多会话结构：rec = { active, sessions: [{id, name, provider, model}] }
       const sessions = Array.isArray(rec?.sessions) ? rec.sessions : [];
       const text = sessions.length
-        ? sessions.map((x) => (x.id === rec.active ? '✅ ' : '') + (x.name || x.id) + (x.provider && x.model ? ' [' + x.provider + '/' + x.model + ']' : '')).join('\n')
+        ? sessions.map((x) => (x.id === rec.active ? '✅ ' : '') + (x.name || x.id) + (x.provider && x.model ? ' [' + x.provider + '/' + x.model + ']' : '')).join('\\n')
         : String(rec);
       const tr = tbl.insertRow(), td1 = document.createElement('td'), td2 = document.createElement('td');
       td1.textContent = u.slice(0, 18) + '…'; td2.textContent = text;

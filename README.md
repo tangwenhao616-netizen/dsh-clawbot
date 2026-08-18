@@ -1,6 +1,8 @@
-# dsh-weixin（本地 fork · 多会话版）
+# dsh-weixin（社区增强 fork · 多会话版）
 
-> 本目录是 `dsh-weixin@0.2.1` 的本地 fork，安装方式为 `link:/home/wl/.dsh/plugins/dsh-weixin`。
+> 本仓库是 [`caoyilearnai/dsh-weixin`](https://github.com/caoyilearnai/dsh-weixin) `v0.2.1` 的社区增强 fork。
+> 安装方式：`dsh plugin --profile web add github:tangwenhao616-netizen/dsh-weixin`
+>
 > 与上游 npm 版的差异：
 >
 > 1. **多会话**：一个微信用户可拥有多个会话（`session-map.json` 从 1:1 映射升级为

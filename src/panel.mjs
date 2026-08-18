@@ -270,7 +270,7 @@ export function registerPanel(ctx, channel) {
         }
       },
     }),
-    'dsh-weixin: /weixin panel',
+    'dsh-clawbot: /weixin panel',
   )
 }
 
@@ -281,7 +281,7 @@ function sendHtml(res) {
 <html lang="zh-CN">
 <head>
 <meta charset="utf-8">
-<title>微信通道 · dsh-weixin</title>
+<title>微信通道 · dsh-clawbot</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
   body { font-family: -apple-system, "PingFang SC", sans-serif; max-width: 720px; margin: 24px auto; padding: 0 16px; color: #1f2328; background: #fff; }
@@ -299,7 +299,7 @@ function sendHtml(res) {
 </style>
 </head>
 <body>
-<h1>📱 微信通道 <span class="muted">dsh-weixin</span></h1>
+<h1>📱 微信通道 <span class="muted">dsh-clawbot</span></h1>
 <div class="card">
   <div class="row">状态：<b id="conn" class="bad">未知</b></div>
   <div class="row muted" id="meta"></div>

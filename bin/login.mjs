@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * dsh-weixin 扫码登录（CLI 备选；首选在面板 http://<host>/weixin 登录）。
+ * dsh-clawbot 扫码登录（CLI 备选；首选在面板 http://<host>/weixin 登录）。
  * 手机端前置：微信「设置 → 插件 → ClawBot」（iOS ≥ 8.0.70；安卓灰度中）。
  * 凭据写入状态目录（默认 $DSH_HOME/dsh-weixin/credentials.json），插件重启后自动读取。
  *

@@ -1,5 +1,5 @@
 /**
- * dsh-weixin：微信 ClawBot (iLink) 通道插件（标准 cordis bundle 形态）。
+ * dsh-clawbot：微信 ClawBot (iLink) 通道插件（标准 cordis bundle 形态）。
  *
  * 数据流：
  *   iLink getupdates 长轮询收消息 → 按微信用户映射/创建 Harness 会话
@@ -14,7 +14,7 @@ import * as ilink from './ilink.mjs'
 import { createStore, resolveStateDir, resolveWorkspaceDir } from './creds.mjs'
 import { registerPanel } from './panel.mjs'
 
-export const name = 'dsh-weixin'
+export const name = 'dsh-clawbot'
 /** 硬依赖：面板需要 webServer；通道需要 agents（查找/创建/恢复代理）；tools 用于注册主动推送工具；attachments 用于收图（存图喂视觉模型）。agentPresets 为可选探测。 */
 export const inject = ['webServer', 'agents', 'tools', 'attachments']
 
@@ -82,7 +82,7 @@ export class WeixinChannel {
     this.sessionMap = loaded.map ?? loaded
     if (loaded.migrated) {
       this.store.saveSessionMap(this.sessionMap)
-      this.log.info?.('dsh-weixin: 会话映射已升级为多会话格式')
+      this.log.info?.('dsh-clawbot: 会话映射已升级为多会话格式')
     }
     this.buf = store.loadBuf()
     this.botAgent = 'DeepSeek Harness Weixin Channel'
@@ -703,7 +703,7 @@ export class WeixinChannel {
 
     const userMessage = makeUserMessage({
       content,
-      source: { kind: 'plugin', plugin: 'dsh-weixin' },
+      source: { kind: 'plugin', plugin: 'dsh-clawbot' },
     })
 
     await new Promise((resolve) => {

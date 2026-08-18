@@ -1,7 +1,7 @@
-# dsh-weixin（社区增强 fork · 多会话版）
+# dsh-clawbot（社区增强版 · 多会话）
 
-> 本仓库是 [`caoyilearnai/dsh-weixin`](https://github.com/caoyilearnai/dsh-weixin) `v0.2.1` 的社区增强 fork。
-> 安装方式：`dsh plugin --profile web add github:tangwenhao616-netizen/dsh-weixin`
+> 本仓库是 [`caoyilearnai/dsh-weixin`](https://github.com/caoyilearnai/dsh-weixin) `v0.2.1` 的社区增强版，基于微信 ClawBot（iLink）通道。
+> 安装方式：`dsh plugin --profile web add github:tangwenhao616-netizen/dsh-clawbot`
 >
 > 与上游 npm 版的差异：
 >

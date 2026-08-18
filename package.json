@@ -1,7 +1,7 @@
 {
-  "name": "dsh-weixin",
+  "name": "dsh-clawbot",
   "version": "0.2.1",
-  "description": "微信 ClawBot (iLink) 通道插件：把微信消息接入 DeepSeek Harness 会话，按用户隔离、原生注入与回发。",
+  "description": "微信 ClawBot (iLink) 通道插件增强版：多会话、斜杠命令、每会话模型、并发修复。把微信消息接入 DeepSeek Harness 会话。",
   "type": "module",
   "main": "index.mjs",
   "exports": {
@@ -22,7 +22,7 @@
     }
   },
   "bin": {
-    "dsh-weixin-login": "bin/login.mjs"
+    "dsh-clawbot-login": "bin/login.mjs"
   },
   "dependencies": {
     "@deepseek-ai/schemastery": "^3.18.1",
@@ -31,11 +31,11 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/caoyilearnai/dsh-weixin.git"
+    "url": "git+https://github.com/tangwenhao616-netizen/dsh-clawbot.git"
   },
-  "homepage": "https://github.com/caoyilearnai/dsh-weixin#readme",
+  "homepage": "https://github.com/tangwenhao616-netizen/dsh-clawbot#readme",
   "bugs": {
-    "url": "https://github.com/caoyilearnai/dsh-weixin/issues"
+    "url": "https://github.com/tangwenhao616-netizen/dsh-clawbot/issues"
   },
   "engines": {
     "node": ">=20.3.0"

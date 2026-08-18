@@ -1,7 +1,7 @@
-# dsh-weixin bundle layer：按包名引用插件。
+# dsh-clawbot bundle layer：按包名引用插件。
 # 安装：dsh plugin --profile web add <本包>
 # 覆盖默认配置：在用户 profile 的 cordis.patch.yml 中重述本行（含全部键，见 README）。
 
 - insert:
     - id: weixin
-      name: dsh-weixin
+      name: dsh-clawbot

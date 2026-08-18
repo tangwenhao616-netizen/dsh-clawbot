@@ -1,0 +1,19 @@
+# dependencies
+node_modules/
+.pnpm-store/
+
+# logs
+*.log
+npm-debug.log*
+pnpm-debug.log*
+
+# runtime / state
+*.local
+.DS_Store
+
+# 微信插件状态数据（勿提交）
+credentials.json
+session-map.json
+updates-buf.json
+state/
+workspace/
